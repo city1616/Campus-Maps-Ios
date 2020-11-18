@@ -1,0 +1,3 @@
+target 'CampusMaps' do
+	pod 'NMapsMap'
+end
