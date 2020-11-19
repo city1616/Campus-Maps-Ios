@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import NMapsMap
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = UIHostingController(rootView: contentView)
         self.window = window
         window.makeKeyAndVisible()
+        
+        NMFAuthManager.shared().clientId = "6z442e8fcw"
         return true
     }
 

@@ -44,5 +44,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NMFClientId</key>
+	<string>6z442e8fcw</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location OK?</string>
 </dict>
 </plist>
