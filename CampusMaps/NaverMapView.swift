@@ -5,14 +5,10 @@
 //  Created by SeungWoo Mun on 2020/11/19.
 //
 
+import SwiftUI
 import UIKit
 import NMapsMap
 
-//struct NaverMapView : View {
-//    var body: some View {
-//        return ViewController()
-//    }
-//}
 
 class ViewController: UIViewController, NMFMapViewDelegate {
     var authState: NMFAuthState!
@@ -23,7 +19,6 @@ class ViewController: UIViewController, NMFMapViewDelegate {
         let nmapView = NMFMapView(frame: view.frame)
         view.addSubview(nmapView)
     }
-    
 }
 
 
