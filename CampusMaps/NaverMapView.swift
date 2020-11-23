@@ -9,6 +9,8 @@ import SwiftUI
 import UIKit
 import NMapsMap
 
+public let DEFAULT_CAMERA_POSITION = NMFCameraPosition(NMGLatLng(lat: 35.968461, lng: 126.958047), zoom: 14, tilt: 0, heading: 0)
+
 struct NaverMapView : View {
     var body: some View {
         return navermap()
@@ -19,6 +21,7 @@ struct navermap: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         var _: NMFAuthState!
         let nmapView = NMFMapView(frame: .zero)
+        nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
         return nmapView
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {

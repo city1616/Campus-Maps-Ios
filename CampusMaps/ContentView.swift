@@ -8,19 +8,24 @@
 import SwiftUI
 import RealityKit
 
+//struct ContentView: View {
+//    var body: some View {
+//        Text("abc")
+//    }
+//}
 struct ContentView : View {
-    
+
     @State var ShowMenu = false
     @State var arToggle = false
-    
+
     var body: some View {
+
         NavigationView {
             VStack() {
                 // Text("AR")
                 NaverMapView().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 // ARViewContainer().edgesIgnoringSafeArea(.all)
             }
-            
             .navigationTitle("Campus Maps")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(leading: Button(action: {
@@ -37,10 +42,9 @@ struct ContentView : View {
                 Text("AR")
             })
         }
-        .edgesIgnoringSafeArea(.all)
-        
-        // NaverMapView().edgesIgnoringSafeArea(.all)
-        // MapTest()
+//         .edgesIgnoringSafeArea(.all)
+//
+//         NaverMapView().edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -49,7 +53,11 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
 
         let arView = ARView(frame: .zero)
-
+        
+        arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        self.arView.frame = self.view.bounds
+//        self.arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
         // Load the "Box" scene from the "Experience" Reality File
         let boxAnchor = try! Experience.load장면1()
 

@@ -14,6 +14,7 @@
 		41560FAC256573B100B15D5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41560FAB256573B100B15D5D /* Preview Assets.xcassets */; };
 		41560FB7256573B100B15D5D /* CampusMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FB6256573B100B15D5D /* CampusMapsTests.swift */; };
 		41560FC2256573B100B15D5D /* CampusMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FC1256573B100B15D5D /* CampusMapsUITests.swift */; };
+		4162A9E2256BEF6F00D77415 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162A9E1256BEF6F00D77415 /* TestView.swift */; };
 		416306492566314800CD8578 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416306482566314800CD8578 /* NaverMapView.swift */; };
 		4B01209E99B12FD2CA4D23D9 /* libPods-CampusMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E6DCAA47DF185E11A8F6B0 /* libPods-CampusMaps.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		41560FBD256573B100B15D5D /* CampusMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41560FC1256573B100B15D5D /* CampusMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapsUITests.swift; sourceTree = "<group>"; };
 		41560FC3256573B100B15D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4162A9E1256BEF6F00D77415 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		416306482566314800CD8578 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		8AFCFD7ABE928ABFAE81AA77 /* Pods-CampusMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusMaps.release.xcconfig"; path = "Target Support Files/Pods-CampusMaps/Pods-CampusMaps.release.xcconfig"; sourceTree = "<group>"; };
 		E4E6DCAA47DF185E11A8F6B0 /* libPods-CampusMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CampusMaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				41560FA2256573B000B15D5D /* AppDelegate.swift */,
 				41560FA4256573B000B15D5D /* ContentView.swift */,
 				416306482566314800CD8578 /* NaverMapView.swift */,
+				4162A9E1256BEF6F00D77415 /* TestView.swift */,
 				41560FA6256573B000B15D5D /* Experience.rcproject */,
 				41560FA8256573B100B15D5D /* Assets.xcassets */,
 				41560FAD256573B100B15D5D /* Info.plist */,
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41560FA5256573B000B15D5D /* ContentView.swift in Sources */,
+				4162A9E2256BEF6F00D77415 /* TestView.swift in Sources */,
 				41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */,
 				416306492566314800CD8578 /* NaverMapView.swift in Sources */,
 				41560FA7256573B000B15D5D /* Experience.rcproject in Sources */,
@@ -496,6 +500,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CampusMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = 68S28392QD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CampusMaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -518,6 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CampusMaps/Preview Content\"";
+				DEVELOPMENT_TEAM = 68S28392QD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CampusMaps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
