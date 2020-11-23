@@ -10,8 +10,27 @@ import RealityKit
 
 struct ContentView : View {
     
+    @State var ShowMenu = false
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        NavigationView {
+            VStack() {
+                Text("AR")
+                ARViewContainer().edgesIgnoringSafeArea(.all)
+            }
+            
+            .navigationTitle("Campus Maps")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: Button(action: {
+                withAnimation {
+                    self.ShowMenu.toggle()
+                }
+            }) {
+                Text("menu")
+            })
+        }
+        .edgesIgnoringSafeArea(.all)
+        
         // NaverMapView().edgesIgnoringSafeArea(.all)
         // MapTest()
     }
@@ -24,7 +43,7 @@ struct ARViewContainer: UIViewRepresentable {
         let arView = ARView(frame: .zero)
 
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! Experience.load장면1()
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
