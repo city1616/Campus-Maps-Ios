@@ -11,12 +11,14 @@ import RealityKit
 struct ContentView : View {
     
     @State var ShowMenu = false
+    @State var arToggle = false
     
     var body: some View {
         NavigationView {
             VStack() {
-                Text("AR")
-                ARViewContainer().edgesIgnoringSafeArea(.all)
+                // Text("AR")
+                NaverMapView().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                // ARViewContainer().edgesIgnoringSafeArea(.all)
             }
             
             .navigationTitle("Campus Maps")
@@ -27,6 +29,12 @@ struct ContentView : View {
                 }
             }) {
                 Text("menu")
+            }, trailing: Button(action: {
+                withAnimation {
+                    self.arToggle.toggle()
+                }
+            }) {
+                Text("AR")
             })
         }
         .edgesIgnoringSafeArea(.all)

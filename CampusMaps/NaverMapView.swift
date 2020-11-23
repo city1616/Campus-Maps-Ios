@@ -9,15 +9,36 @@ import SwiftUI
 import UIKit
 import NMapsMap
 
+struct NaverMapView : View {
+    var body: some View {
+        return navermap()
+    }
+}
 
-class ViewController: UIViewController, NMFMapViewDelegate {
-    var authState: NMFAuthState!
+struct navermap: UIViewRepresentable {
+    func makeUIView(context: Context) -> some UIView {
+        var _: NMFAuthState!
+        let nmapView = NMFMapView(frame: .zero)
+        return nmapView
+    }
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+    }
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//class ViewController: UIViewController, NMFMapViewDelegate {
+//    var authState: NMFAuthState!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        let nmapView = NMFMapView(frame: view.frame)
+//        view.addSubview(nmapView)
+//    }
+//}
 
-        let nmapView = NMFMapView(frame: view.frame)
-        view.addSubview(nmapView)
+struct NaverMapView_Previews : PreviewProvider {
+    static var previews: some View {
+        NaverMapView()
     }
 }
 
