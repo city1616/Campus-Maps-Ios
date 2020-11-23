@@ -10,7 +10,87 @@
                 "name" : "surface"
               },
               "behaviors" : [
-
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 1.0299999713897705,
+                                          "emphasisAnimationType" : "flip",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "C8A2CE1D-13F7-43C0-B7C7-8CEC41DCEA09"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "4595E3D2-4021-414F-9BB5-C43829D96455",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "64B3AC81-C10E-4BF8-9E0F-54E40AB161B1",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "58BB2F3C-556F-461D-A5B7-836EBEF3D8BB",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "연출",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "C8A2CE1D-13F7-43C0-B7C7-8CEC41DCEA09"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "730993BB-6E98-469A-8E38-62454F47378B",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                }
               ],
               "gravity" : [
                 0,
@@ -107,6 +187,13 @@
                             "typeName" : "UUID",
                             "value" : "C8A2CE1D-13F7-43C0-B7C7-8CEC41DCEA09"
                           }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "abc"
+                          }
                         ]
                       ]
                     },
@@ -145,7 +232,7 @@
                 ]
               },
               "physicsMode" : "grid",
-              "title" : "Box",
+              "title" : "scene",
               "viewTransform" : {
                 "cameraTransform" : [
                   0.99999994039535522,
@@ -153,12 +240,12 @@
                   0,
                   0,
                   0,
-                  0.80754852294921875,
+                  0.80754858255386353,
                   -0.58980095386505127,
                   0,
                   0,
                   0.58980095386505127,
-                  0.80754852294921875,
+                  0.80754858255386353,
                   0,
                   0,
                   1.135667085647583,
