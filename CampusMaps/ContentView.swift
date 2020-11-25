@@ -40,7 +40,9 @@ struct ContentView : View {
                 }
             }) {
                 Text("AR")
-            })
+            }).sheet(isPresented: $arToggle) {
+                ARViewContainer()
+            }
         }
 //         .edgesIgnoringSafeArea(.all)
 //

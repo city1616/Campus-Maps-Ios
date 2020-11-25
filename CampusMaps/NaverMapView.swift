@@ -11,6 +11,7 @@ import NMapsMap
 
 public let DEFAULT_CAMERA_POSITION = NMFCameraPosition(NMGLatLng(lat: 35.968461, lng: 126.958047), zoom: 14, tilt: 0, heading: 0)
 
+
 struct NaverMapView : View {
     var body: some View {
         return navermap()
@@ -19,11 +20,28 @@ struct NaverMapView : View {
 
 struct navermap: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
+        
+//        let naverMapView: NMFNaverMapView!
+//        var mapView: NMFMapView {
+//            return naverMapView.mapView
+//        }
+        
         var _: NMFAuthState!
-        let nmapView = NMFMapView(frame: .zero)
-        nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
+        
+        let nmapView = NMFNaverMapView(frame: .zero)
+        
+       
+        // nmapView.addOptionDelegate(delegate: self)
+        
+        // nmapView.mapType = .basic
+        
+        
+        // nmapView.isNightModeEnabled = true // darkmode
+        
+        // nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
         return nmapView
     }
+    
     func updateUIView(_ uiView: UIViewType, context: Context) {
     }
 }
