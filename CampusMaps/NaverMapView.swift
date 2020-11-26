@@ -50,6 +50,7 @@ struct navermap: UIViewRepresentable {
         naverMapView.mapView.mapType = .basic
         naverMapView.showLocationButton = true
         naverMapView.showCompass = true
+        naverMapView.showZoomControls = true
         
         // nmapView.isNightModeEnabled = true // darkmode
       

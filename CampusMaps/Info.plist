@@ -25,11 +25,11 @@
 	<key>NSCameraUsageDescription</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>사용자의 위치를 받습니다.</string>
+	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>사용자의 위치를 받습니다.</string>
+	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>사용자의 위치를 받습니다.</string>
+	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

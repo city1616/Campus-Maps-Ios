@@ -32,7 +32,7 @@ struct ContentView : View {
                             VStack {
                                 Image(systemName: "map")
                                     .font(.title3)
-                                Text("지도")
+                                Text("MAP")
                                     .multilineTextAlignment(.center)
                                     .font(.footnote)
                             }
@@ -40,19 +40,32 @@ struct ContentView : View {
                         Spacer()
                         Button(action: {}) {
                             VStack {
-                                Image(systemName: "mappin.and.ellipse")
+                                // Image(systemName: "mappin.and.ellipse")
+                                Image(systemName: "location.circle")
                                     .font(.title3)
-                                Text("길찾기")
+                                Text("NAV")
                                     .font(.footnote)
                             }
                         }
                         Spacer()
-                        Button(action: {}) {
+                        Button(action: {
+                            withAnimation {
+                                self.arToggle.toggle()
+                            }
+                        }) {
                             VStack {
-                                Image(systemName: "car")
+                                // Image(systemName: "camera.on.rectangle")
+                                Image(systemName: "arkit")
                                     .font(.title3)
-                                Text("내비게이션")
+                                Text("AR")
                                     .font(.footnote)
+                                    .sheet(isPresented: $arToggle) {
+                                        VStack {
+                                            ARViewContainer().edgesIgnoringSafeArea(.all)
+//                                            NaverMapView().edgesIgnoringSafeArea(.all)
+//                                                .frame(width: .zero, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        }
+                                    }
                             }
                         }
                         Spacer()
@@ -60,7 +73,7 @@ struct ContentView : View {
                             VStack {
                                 Image(systemName: "person.circle")
                                     .font(.title3)
-                                Text("내 정보")
+                                Text("MY")
                                     .font(.footnote)
                             }
                         }
@@ -82,10 +95,9 @@ struct ContentView : View {
                     self.arToggle.toggle()
                 }
             }) {
-                Text("AR")
-            }).sheet(isPresented: $arToggle) {
-                ARViewContainer().edgesIgnoringSafeArea(.all)
-            }
+                Image(systemName: "ellipsis")
+                    .font(.title3)
+            })
         }
 //         .edgesIgnoringSafeArea(.all)
 //
