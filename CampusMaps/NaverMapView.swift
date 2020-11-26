@@ -21,10 +21,10 @@ struct NaverMapView : View {
 struct navermap: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         
-        weak var naverMapView: NMFNaverMapView!
-        var mapView: NMFMapView {
-            return naverMapView.mapView
-        }
+//        weak var naverMapView: NMFNaverMapView!
+//        var mapView: NMFMapView {
+//            return naverMapView.mapView
+//        }
         
         var _: NMFAuthState!
         
@@ -33,13 +33,13 @@ struct navermap: UIViewRepresentable {
        
         // nmapView.addOptionDelegate(delegate: self)
         
-        // nmapView.mapType = .basic
+        nmapView.mapType = .basic
         
         
         // nmapView.isNightModeEnabled = true // darkmode
       
         nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
-        return mapView
+        return nmapView
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {

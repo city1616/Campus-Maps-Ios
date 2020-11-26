@@ -25,6 +25,49 @@ struct ContentView : View {
                 // Text("AR")
                 NaverMapView().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 // ARViewContainer().edgesIgnoringSafeArea(.all)
+                VStack(alignment: .center, spacing: 0.0) {
+                    HStack() {
+                        Spacer()
+                        Button(action: {}) {
+                            VStack {
+                                Image(systemName: "map")
+                                    .font(.title3)
+                                Text("지도")
+                                    .multilineTextAlignment(.center)
+                                    .font(.footnote)
+                            }
+                        }
+                        Spacer()
+                        Button(action: {}) {
+                            VStack {
+                                Image(systemName: "mappin.and.ellipse")
+                                    .font(.title3)
+                                Text("길찾기")
+                                    .font(.footnote)
+                            }
+                        }
+                        Spacer()
+                        Button(action: {}) {
+                            VStack {
+                                Image(systemName: "car")
+                                    .font(.title3)
+                                Text("내비게이션")
+                                    .font(.footnote)
+                            }
+                        }
+                        Spacer()
+                        Button(action: {}) {
+                            VStack {
+                                Image(systemName: "person.circle")
+                                    .font(.title3)
+                                Text("내 정보")
+                                    .font(.footnote)
+                            }
+                        }
+                        Spacer()
+                    }
+                    .padding(.top, 10.0)
+                }
             }
             .navigationTitle("Campus Maps")
             .navigationBarTitleDisplayMode(.inline)
@@ -41,7 +84,7 @@ struct ContentView : View {
             }) {
                 Text("AR")
             }).sheet(isPresented: $arToggle) {
-                ARViewContainer()
+                ARViewContainer().edgesIgnoringSafeArea(.all)
             }
         }
 //         .edgesIgnoringSafeArea(.all)
@@ -61,7 +104,7 @@ struct ARViewContainer: UIViewRepresentable {
 //        self.arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.load장면1()
+        let boxAnchor = try! Experience.load장면()
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
