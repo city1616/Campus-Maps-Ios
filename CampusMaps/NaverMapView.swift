@@ -19,6 +19,18 @@ struct NaverMapView : View {
 }
 
 struct navermap: UIViewRepresentable {
+    
+    @ObservedObject var locationManager = LocationManager()
+    
+    var userLatitude: String {
+        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
+    }
+
+    var userLongitude: String {
+        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
+    }
+    
+    
     func makeUIView(context: Context) -> some UIView {
         
 //        weak var naverMapView: NMFNaverMapView!
@@ -26,23 +38,35 @@ struct navermap: UIViewRepresentable {
 //            return naverMapView.mapView
 //        }
         
+        let naverMapView = NMFNaverMapView()
+        
         var _: NMFAuthState!
         
-        let nmapView = NMFMapView(frame: .zero)
+        // let nmapView = NMFMapView(frame: .zero)
         
        
         // nmapView.addOptionDelegate(delegate: self)
         
-        nmapView.mapType = .basic
-        
+        naverMapView.mapView.mapType = .basic
+        naverMapView.showLocationButton = true
+        naverMapView.showCompass = true
         
         // nmapView.isNightModeEnabled = true // darkmode
       
-        nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
-        return nmapView
+        // nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
+        // naverMapView.mapView.moveCamera(NMFCameraUpdate(position: NMFCameraPosition(NMGLatLng(lat: Double(userLatitude.floatValue), lng: Double(userLongitude.floatValue)), zoom: 14, tilt: 0, heading: 0)))
+        naverMapView.mapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
+        
+        return naverMapView
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
+    }
+}
+
+extension String {
+    var floatValue: Float {
+        return (self as NSString).floatValue
     }
 }
 
