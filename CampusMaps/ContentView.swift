@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 //struct ContentView: View {
 //    var body: some View {
@@ -111,17 +112,24 @@ struct ARViewContainer: UIViewRepresentable {
 
         let arView = ARView(frame: .zero)
         
+//        let ARModel = try! ModelEntity.load(named: "ARModel")
+//        let anchorEntity = AnchorEntity(plane: .horizontal)
+//        anchorEntity.addChild(ARModel)
+//        arView.scene.addAnchor(anchorEntity)
+        
         arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        self.arView.frame = self.view.bounds
 //        self.arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.load장면()
+        let boxAnchor = try! Experience.load장면1()
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+  
 
         return arView
+        // return arvieww.session.run(config)
 
     }
 
