@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-CampusMaps/Pods-CampusMaps-frameworks.sh
+${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework
+${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework
 ${PODS_ROOT}/NMapsMap/framework/NMapsMap.framework
