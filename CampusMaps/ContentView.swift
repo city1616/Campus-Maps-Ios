@@ -18,6 +18,7 @@ struct ContentView : View {
 
     @State var SideMenu = false
     @State var arToggle = false
+    @State var naviToggle = false
     
     
 
@@ -52,7 +53,11 @@ struct ContentView : View {
                                 }
                             }
                             Spacer()
-                            Button(action: {}) {
+                            Button(action: {
+                                withAnimation {
+                                    self.naviToggle.toggle()
+                                }
+                            }) {
                                 VStack {
                                     // Image(systemName: "mappin.and.ellipse")
                                     Image(systemName: "location.circle")
@@ -60,6 +65,9 @@ struct ContentView : View {
                                     Text("NAV")
                                         .font(.footnote)
                                 }
+                            }
+                            .sheet(isPresented: $naviToggle) {
+                                TestView()
                             }
                             Spacer()
                             Button(action: {
@@ -70,7 +78,6 @@ struct ContentView : View {
                                 VStack {
                                     // Image(systemName: "camera.on.rectangle")
                                     Image(systemName: "arkit")
-                                        .font(.title3)
                                     Text("AR")
                                         .font(.footnote)
                                         .sheet(isPresented: $arToggle) {

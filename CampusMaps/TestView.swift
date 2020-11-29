@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import Mapbox
 
 struct TestView: View {
+    
+    @State var annotations: [MGLPointAnnotation] = [
+        MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        MapTestView(annotations: $annotations).centerCoordinate(.init(latitude: 37.791293, longitude: -122.396324)).zoomLevel(16)
     }
+    
 }
 
 struct TestView_Previews: PreviewProvider {

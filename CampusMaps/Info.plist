@@ -20,15 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoibXVuc2V1bmd3b28iLCJhIjoiY2tpMzJpYW9zMXNoMTJya2J2bzRnM2ozYyJ9.nfQaKfOXlUoYWApwqc4UXw</string>
 	<key>NMFClientId</key>
 	<string>6z442e8fcw</string>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
+	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
