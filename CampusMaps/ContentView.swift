@@ -67,7 +67,7 @@ struct ContentView : View {
                                 }
                             }
                             .sheet(isPresented: $naviToggle) {
-                                TestView()
+                                NaviView()
                             }
                             Spacer()
                             Button(action: {

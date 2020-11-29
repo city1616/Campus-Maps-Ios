@@ -14,12 +14,12 @@
 		41560FAC256573B100B15D5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41560FAB256573B100B15D5D /* Preview Assets.xcassets */; };
 		41560FB7256573B100B15D5D /* CampusMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FB6256573B100B15D5D /* CampusMapsTests.swift */; };
 		41560FC2256573B100B15D5D /* CampusMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FC1256573B100B15D5D /* CampusMapsUITests.swift */; };
-		4162A9E2256BEF6F00D77415 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162A9E1256BEF6F00D77415 /* TestView.swift */; };
 		4162AA6D256E207900D77415 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162AA6C256E207900D77415 /* Launch Screen.storyboard */; };
 		4162AA782570109000D77415 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162AA772570109000D77415 /* LocationManager.swift */; };
 		416306492566314800CD8578 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416306482566314800CD8578 /* NaverMapView.swift */; };
 		41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3380B25739CEE009E5114 /* SideMenu.swift */; };
-		41F338552573F49B009E5114 /* MapTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F338542573F49B009E5114 /* MapTestView.swift */; };
+		41F3385A2573FEB6009E5114 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F338592573FEB6009E5114 /* NaviView.swift */; };
+		41F3385F2573FF55009E5114 /* NaviMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3385E2573FF55009E5114 /* NaviMapView.swift */; };
 		9BDD9A0C60FF540BD30CAA43 /* Pods_CampusMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D400E934FC083A6F3FE013B7 /* Pods_CampusMaps.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +55,12 @@
 		41560FBD256573B100B15D5D /* CampusMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41560FC1256573B100B15D5D /* CampusMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapsUITests.swift; sourceTree = "<group>"; };
 		41560FC3256573B100B15D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4162A9E1256BEF6F00D77415 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		4162AA6C256E207900D77415 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4162AA772570109000D77415 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		416306482566314800CD8578 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
 		41F3380B25739CEE009E5114 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		41F338542573F49B009E5114 /* MapTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestView.swift; sourceTree = "<group>"; };
+		41F338592573FEB6009E5114 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
+		41F3385E2573FF55009E5114 /* NaviMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviMapView.swift; sourceTree = "<group>"; };
 		8AFCFD7ABE928ABFAE81AA77 /* Pods-CampusMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusMaps.release.xcconfig"; path = "Target Support Files/Pods-CampusMaps/Pods-CampusMaps.release.xcconfig"; sourceTree = "<group>"; };
 		D400E934FC083A6F3FE013B7 /* Pods_CampusMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,8 +131,8 @@
 				416306482566314800CD8578 /* NaverMapView.swift */,
 				4162AA772570109000D77415 /* LocationManager.swift */,
 				4162AA6C256E207900D77415 /* Launch Screen.storyboard */,
-				4162A9E1256BEF6F00D77415 /* TestView.swift */,
-				41F338542573F49B009E5114 /* MapTestView.swift */,
+				41F338592573FEB6009E5114 /* NaviView.swift */,
+				41F3385E2573FF55009E5114 /* NaviMapView.swift */,
 				41560FA6256573B000B15D5D /* Experience.rcproject */,
 				41560FA8256573B100B15D5D /* Assets.xcassets */,
 				41560FAD256573B100B15D5D /* Info.plist */,
@@ -350,12 +350,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				41560FA5256573B000B15D5D /* ContentView.swift in Sources */,
-				4162A9E2256BEF6F00D77415 /* TestView.swift in Sources */,
+				41F3385F2573FF55009E5114 /* NaviMapView.swift in Sources */,
 				41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */,
 				4162AA782570109000D77415 /* LocationManager.swift in Sources */,
 				41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */,
-				41F338552573F49B009E5114 /* MapTestView.swift in Sources */,
 				416306492566314800CD8578 /* NaverMapView.swift in Sources */,
+				41F3385A2573FEB6009E5114 /* NaviView.swift in Sources */,
 				41560FA7256573B000B15D5D /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

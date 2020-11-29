@@ -1,5 +1,5 @@
 //
-//  MapTestView.swift
+//  NaviMapView.swift
 //  CampusMaps
 //
 //  Created by SeungWoo Mun on 2020/11/30.
@@ -16,40 +16,39 @@ extension MGLPointAnnotation {
     }
 }
 
-
-struct MapTestView: UIViewRepresentable {
+struct NaviMapView: UIViewRepresentable {
     @Binding var annotations: [MGLPointAnnotation]
     
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     
     // MARK: - Configuring UIViewRepresentable protocol
     
-    func makeUIView(context: UIViewRepresentableContext<MapTestView>) -> MGLMapView {
+    func makeUIView(context: UIViewRepresentableContext<NaviMapView>) -> MGLMapView {
         mapView.delegate = context.coordinator
         return mapView
     }
     
-    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapTestView>) {
+    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<NaviMapView>) {
         updateAnnotations()
     }
     
-    func makeCoordinator() -> MapTestView.Coordinator {
+    func makeCoordinator() -> NaviMapView.Coordinator {
         Coordinator(self)
     }
     
     // MARK: - Configuring MGLMapView
     
-    func styleURL(_ styleURL: URL) -> MapTestView {
+    func styleURL(_ styleURL: URL) -> NaviMapView {
         mapView.styleURL = styleURL
         return self
     }
     
-    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapTestView {
+    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> NaviMapView {
         mapView.centerCoordinate = centerCoordinate
         return self
     }
     
-    func zoomLevel(_ zoomLevel: Double) -> MapTestView {
+    func zoomLevel(_ zoomLevel: Double) -> NaviMapView {
         mapView.zoomLevel = zoomLevel
         return self
     }
@@ -64,9 +63,9 @@ struct MapTestView: UIViewRepresentable {
     // MARK: - Implementing MGLMapViewDelegate
     
     final class Coordinator: NSObject, MGLMapViewDelegate {
-        var control: MapTestView
+        var control: NaviMapView
         
-        init(_ control: MapTestView) {
+        init(_ control: NaviMapView) {
             self.control = control
         }
         
@@ -103,8 +102,8 @@ struct MapTestView: UIViewRepresentable {
     }
 }
 
-//struct MapTestView_Previews: PreviewProvider {
+//struct NaviMapView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        MapTestView()
+//        NaviMapView()
 //    }
 //}
