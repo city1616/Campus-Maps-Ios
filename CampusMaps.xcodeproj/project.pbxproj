@@ -10,6 +10,7 @@
 		41443D41257CCED70073CAEB /* Content_pre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D40257CCED70073CAEB /* Content_pre.swift */; };
 		41443D46257CD0820073CAEB /* MY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D45257CD0820073CAEB /* MY.swift */; };
 		41443D4B257CD0BE0073CAEB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D4A257CD0BE0073CAEB /* Home.swift */; };
+		41443D57257CD6CC0073CAEB /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */; };
 		41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA2256573B000B15D5D /* AppDelegate.swift */; };
 		41560FA5256573B000B15D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA4256573B000B15D5D /* ContentView.swift */; };
 		41560FA7256573B000B15D5D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA6256573B000B15D5D /* Experience.rcproject */; };
@@ -48,6 +49,7 @@
 		41443D40257CCED70073CAEB /* Content_pre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content_pre.swift; sourceTree = "<group>"; };
 		41443D45257CD0820073CAEB /* MY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MY.swift; sourceTree = "<group>"; };
 		41443D4A257CD0BE0073CAEB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		41560F9F256573B000B15D5D /* CampusMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41560FA2256573B000B15D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41560FA4256573B000B15D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,14 +108,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		41443D4F257CD0D30073CAEB /* TabView */ = {
+		41443D4F257CD0D30073CAEB /* Tabview */ = {
 			isa = PBXGroup;
 			children = (
 				41443D4A257CD0BE0073CAEB /* Home.swift */,
 				41F338592573FEB6009E5114 /* NaviView.swift */,
 				41443D45257CD0820073CAEB /* MY.swift */,
 			);
-			path = TabView;
+			path = Tabview;
 			sourceTree = "<group>";
 		};
 		41560F96256573B000B15D5D = {
@@ -143,9 +145,10 @@
 			children = (
 				41560FA2256573B000B15D5D /* AppDelegate.swift */,
 				41560FA4256573B000B15D5D /* ContentView.swift */,
+				41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */,
 				41443D40257CCED70073CAEB /* Content_pre.swift */,
 				41F3380B25739CEE009E5114 /* SideMenu.swift */,
-				41443D4F257CD0D30073CAEB /* TabView */,
+				41443D4F257CD0D30073CAEB /* Tabview */,
 				416306482566314800CD8578 /* NaverMapView.swift */,
 				4162AA772570109000D77415 /* LocationManager.swift */,
 				4162AA6C256E207900D77415 /* Launch Screen.storyboard */,
@@ -369,6 +372,7 @@
 				41560FA5256573B000B15D5D /* ContentView.swift in Sources */,
 				41F3385F2573FF55009E5114 /* NaviMapView.swift in Sources */,
 				41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */,
+				41443D57257CD6CC0073CAEB /* CustomNavigationView.swift in Sources */,
 				41443D4B257CD0BE0073CAEB /* Home.swift in Sources */,
 				41443D46257CD0820073CAEB /* MY.swift in Sources */,
 				4162AA782570109000D77415 /* LocationManager.swift in Sources */,

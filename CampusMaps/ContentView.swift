@@ -14,28 +14,26 @@ import ARKit
 //        Text("abc")
 //    }
 //}
+
 struct ContentView : View {
 
     @State var SideMenu = false
-    @State var arToggle = false
-    @State var naviToggle = false
-    @State var selectedView = 0
+
+    @State var selectedView = 0 // TabView index
     
     
 
     var body: some View {
-        
-        let drag = DragGesture()
-            .onEnded {
-                if $0.translation.width < -100 {
-                    withAnimation {
-                        self.SideMenu = false
-                    }
-                }
-            }
 
         return TabView(selection: $selectedView) {
-            NaverMapView()
+
+            // CustomNavigationView(view: Home())
+            CustomNavigationView(view: Home(), onSearch: { (txt) in
+                print("from SwiftUI")
+            }, onCancel: {
+                print("From Canceled")
+            })
+                .edgesIgnoringSafeArea(.all)
                 .tag(0)
                 .tabItem {
                     Image(systemName: "map")

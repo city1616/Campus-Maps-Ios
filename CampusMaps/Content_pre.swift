@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct Content_pre: View {
-    @State var SideMenu = false
+    @State var SideMen = false
     @State var arToggle = false
     @State var naviToggle = false
     var body: some View {
-        let drag = DragGesture()
+        let dragg = DragGesture()
             .onEnded {
                 if $0.translation.width < -100 {
                     withAnimation {
-                        self.SideMenu = false
+                        self.SideMen = false
                     }
                 }
             }
@@ -55,8 +55,8 @@ struct Content_pre: View {
                             }
                             .sheet(isPresented: $naviToggle) {
                                 VStack {
-                                    NaviView()
-                                    
+                                    // NaviView()
+                                    Text("a")
                                 }
                             }
                             Spacer()
@@ -93,10 +93,10 @@ struct Content_pre: View {
                         .padding(.top, 10.0)
                     }
                 }
-                    .offset(x: self.SideMenu ? UIScreen.main.bounds.width / 2 : 0)
-                    .disabled(self.SideMenu ? true : false)
+                    .offset(x: self.SideMen ? UIScreen.main.bounds.width / 2 : 0)
+                    .disabled(self.SideMen ? true : false)
                 
-                if self.SideMenu {
+                if self.SideMen {
                     CampusMaps.SideMenu()
                         // .frame(width: geo.size.width / 2)
                         .frame(width: UIScreen.main.bounds.width / 2)
@@ -108,7 +108,7 @@ struct Content_pre: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(leading: Button(action: {
                 withAnimation {
-                    self.SideMenu.toggle()
+                    self.SideMen.toggle()
                 }
             }) {
                 Text("Menu")
@@ -120,7 +120,7 @@ struct Content_pre: View {
                 Image(systemName: "ellipsis")
                     .font(.title3)
             })
-            .gesture(drag)
+            .gesture(dragg)
         }
     }
 }
