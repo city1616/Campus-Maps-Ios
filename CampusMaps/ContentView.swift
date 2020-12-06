@@ -19,6 +19,7 @@ struct ContentView : View {
     @State var SideMenu = false
     @State var arToggle = false
     @State var naviToggle = false
+    @State var selectedView = 0
     
     
 
@@ -33,104 +34,31 @@ struct ContentView : View {
                 }
             }
 
-        return NavigationView {
-            ZStack(alignment: .leading) {
-                
-                VStack() {
-                    // Text("AR")
-                    NaverMapView().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    // ARViewContainer().edgesIgnoringSafeArea(.all)
-                    VStack(alignment: .center, spacing: 0.0) {
-                        HStack() {
-                            Spacer()
-                            Button(action: {}) {
-                                VStack {
-                                    Image(systemName: "map")
-                                        .font(.title3)
-                                    Text("MAP")
-                                        .multilineTextAlignment(.center)
-                                        .font(.footnote)
-                                }
-                            }
-                            Spacer()
-                            Button(action: {
-                                withAnimation {
-                                    self.naviToggle.toggle()
-                                }
-                            }) {
-                                VStack {
-                                    // Image(systemName: "mappin.and.ellipse")
-                                    Image(systemName: "location.circle")
-                                        .font(.title3)
-                                    Text("NAV")
-                                        .font(.footnote)
-                                }
-                            }
-                            .sheet(isPresented: $naviToggle) {
-                                NaviView()
-                            }
-                            Spacer()
-                            Button(action: {
-                                withAnimation {
-                                    self.arToggle.toggle()
-                                }
-                            }) {
-                                VStack {
-                                    // Image(systemName: "camera.on.rectangle")
-                                    Image(systemName: "arkit")
-                                    Text("AR")
-                                        .font(.footnote)
-                                        .sheet(isPresented: $arToggle) {
-                                            VStack {
-                                                ARViewContainer().edgesIgnoringSafeArea(.all)
-    //                                            NaverMapView().edgesIgnoringSafeArea(.all)
-    //                                                .frame(width: .zero, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                            }
-                                        }
-                                }
-                            }
-                            Spacer()
-                            Button(action: {}) {
-                                VStack {
-                                    Image(systemName: "person.circle")
-                                        .font(.title3)
-                                    Text("MY")
-                                        .font(.footnote)
-                                }
-                            }
-                            Spacer()
-                        }
-                        .padding(.top, 10.0)
-                    }
+        return TabView(selection: $selectedView) {
+            NaverMapView()
+                .tag(0)
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("MAP")
                 }
-                    .offset(x: self.SideMenu ? UIScreen.main.bounds.width / 2 : 0)
-                    .disabled(self.SideMenu ? true : false)
-                
-                if self.SideMenu {
-                    CampusMaps.SideMenu()
-                        // .frame(width: geo.size.width / 2)
-                        .frame(width: UIScreen.main.bounds.width / 2)
-                        .transition(.move(edge: .leading))
-                        .edgesIgnoringSafeArea(.top)
+            NaviView()
+                .tag(1)
+                .tabItem {
+                    Image(systemName: "location.circle")
+                    Text("NAV")
                 }
-            }
-            .navigationTitle("Campus Maps")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading: Button(action: {
-                withAnimation {
-                    self.SideMenu.toggle()
+            ARViewContainer()
+                .tag(2)
+                .tabItem {
+                    Image(systemName: "arkit")
+                    Text("AR")
                 }
-            }) {
-                Text("Menu")
-            }, trailing: Button(action: {
-                withAnimation {
-                    self.arToggle.toggle()
+            MY()
+                .tag(3)
+                .tabItem {
+                    Image(systemName: "person.circle")
+                    Text("MY")
                 }
-            }) {
-                Image(systemName: "ellipsis")
-                    .font(.title3)
-            })
-            .gesture(drag)
         }
 //         .edgesIgnoringSafeArea(.all)
 //
