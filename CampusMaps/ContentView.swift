@@ -25,7 +25,7 @@ struct ContentView : View {
 
     var body: some View {
 
-        return TabView(selection: $selectedView) {
+        TabView(selection: $selectedView) {
 
             // CustomNavigationView(view: Home())
 //            CustomNavigationView(view: Home(), onSearch: { (txt) in

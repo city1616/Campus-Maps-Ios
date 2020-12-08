@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoibXVuc2V1bmd3b28iLCJhIjoiY2tpMzJpYW9zMXNoMTJya2J2bzRnM2ozYyJ9.nfQaKfOXlUoYWApwqc4UXw</string>
+	<string>pk.eyJ1IjoibXVuc2V1bmd3b28iLCJhIjoiY2tpY3llbmJtMDRhZDJxcncyN3Vnbm1mZiJ9.Q1GvQBkF8_Se154-0h1nqQ</string>
 	<key>NMFClientId</key>
 	<string>6z442e8fcw</string>
 	<key>NSCameraUsageDescription</key>
@@ -34,6 +34,8 @@
 	<string>내 위치 확인을 위해 권한이 필요합니다.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array/>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>

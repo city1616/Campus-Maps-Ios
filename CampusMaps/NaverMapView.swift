@@ -52,6 +52,7 @@ struct navermap: UIViewRepresentable {
         naverMapView.showCompass = true
         naverMapView.showZoomControls = true
         
+        
         // nmapView.isNightModeEnabled = true // darkmode
       
         // nmapView.moveCamera(NMFCameraUpdate(position: DEFAULT_CAMERA_POSITION))
