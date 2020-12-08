@@ -28,18 +28,23 @@ struct ContentView : View {
         return TabView(selection: $selectedView) {
 
             // CustomNavigationView(view: Home())
-            CustomNavigationView(view: Home(), onSearch: { (txt) in
-                print("from SwiftUI")
-            }, onCancel: {
-                print("From Canceled")
-            })
+//            CustomNavigationView(view: Home(), onSearch: { (txt) in
+//                print("from SwiftUI")
+//            }, onCancel: {
+//                print("From Canceled")
+//            })
+            Home()
                 .edgesIgnoringSafeArea(.all)
                 .tag(0)
                 .tabItem {
                     Image(systemName: "map")
                     Text("MAP")
                 }
-            NaviView()
+            CustomNavigationView(view: NaviView(), onSearch: { (txt) in
+                print("NaviView")
+            }, onCancel: {
+                print("NaviView Cancel")
+            })
                 .tag(1)
                 .tabItem {
                     Image(systemName: "location.circle")

@@ -13,14 +13,14 @@ struct CustomNavigationView: UIViewControllerRepresentable {
         return CustomNavigationView.Coordinator(parent: self)
     }
     
-    var view: Home
+    var view: NaviView
     
     // onSearch And OnCancel Closures
     var onSearch: (String) -> ()
     var onCancel: ()->()
     
     //requre closure on call
-    init(view: Home, onSearch: @escaping (String)->(), onCancel: @escaping ()->()) {
+    init(view: NaviView, onSearch: @escaping (String)->(), onCancel: @escaping ()->()) {
         self.view = view
         self.onSearch = onSearch
         self.onCancel = onCancel
