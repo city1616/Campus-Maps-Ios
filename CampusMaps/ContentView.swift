@@ -63,12 +63,6 @@ struct ContentView : View {
                     Image(systemName: "person.circle")
                     Text("MY")
                 }
-            ObjectView()
-                .tag(4)
-                .tabItem {
-                    Image(systemName: "person.circle")
-                    Text("MY")
-                }
         }
 //         .edgesIgnoringSafeArea(.all)
 //
