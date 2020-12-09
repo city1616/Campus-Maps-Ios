@@ -45,12 +45,13 @@ struct ContentView : View {
             }, onCancel: {
                 print("NaviView Cancel")
             })
+            .edgesIgnoringSafeArea(.all)
                 .tag(1)
                 .tabItem {
                     Image(systemName: "location.circle")
                     Text("NAV")
                 }
-            ARViewContainer()
+            ARNaviView()
                 .tag(2)
                 .tabItem {
                     Image(systemName: "arkit")
@@ -58,6 +59,12 @@ struct ContentView : View {
                 }
             MY()
                 .tag(3)
+                .tabItem {
+                    Image(systemName: "person.circle")
+                    Text("MY")
+                }
+            ObjectView()
+                .tag(4)
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("MY")

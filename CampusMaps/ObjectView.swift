@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import SceneKit
 
 struct ObjectView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            SceneView(scene: SCNScene(named: "1_floor.usdz"), options: [.autoenablesDefaultLighting, .allowsCameraControl])
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+            Spacer(minLength: 0)
+        }
     }
 }
 

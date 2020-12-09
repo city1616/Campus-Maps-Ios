@@ -11,6 +11,13 @@
 		41443D46257CD0820073CAEB /* MY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D45257CD0820073CAEB /* MY.swift */; };
 		41443D4B257CD0BE0073CAEB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D4A257CD0BE0073CAEB /* Home.swift */; };
 		41443D57257CD6CC0073CAEB /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */; };
+		4151021E2580F19300883A81 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4151021D2580F19300883A81 /* ObjectView.swift */; };
+		4151022E2580F68400883A81 /* 3_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 415102292580F68400883A81 /* 3_floor.usdz */; };
+		4151022F2580F68400883A81 /* 2_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022A2580F68400883A81 /* 2_floor.usdz */; };
+		415102302580F68400883A81 /* 1_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022B2580F68400883A81 /* 1_floor.usdz */; };
+		415102312580F68400883A81 /* 4_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022C2580F68400883A81 /* 4_floor.usdz */; };
+		415102322580F68400883A81 /* 5_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022D2580F68400883A81 /* 5_floor.usdz */; };
+		415102422580F87500883A81 /* ARNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415102412580F87500883A81 /* ARNaviView.swift */; };
 		41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA2256573B000B15D5D /* AppDelegate.swift */; };
 		41560FA5256573B000B15D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA4256573B000B15D5D /* ContentView.swift */; };
 		41560FA7256573B000B15D5D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA6256573B000B15D5D /* Experience.rcproject */; };
@@ -50,6 +57,13 @@
 		41443D45257CD0820073CAEB /* MY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MY.swift; sourceTree = "<group>"; };
 		41443D4A257CD0BE0073CAEB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		4151021D2580F19300883A81 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		415102292580F68400883A81 /* 3_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 3_floor.usdz; sourceTree = "<group>"; };
+		4151022A2580F68400883A81 /* 2_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 2_floor.usdz; sourceTree = "<group>"; };
+		4151022B2580F68400883A81 /* 1_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 1_floor.usdz; sourceTree = "<group>"; };
+		4151022C2580F68400883A81 /* 4_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 4_floor.usdz; sourceTree = "<group>"; };
+		4151022D2580F68400883A81 /* 5_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 5_floor.usdz; sourceTree = "<group>"; };
+		415102412580F87500883A81 /* ARNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNaviView.swift; sourceTree = "<group>"; };
 		41560F9F256573B000B15D5D /* CampusMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41560FA2256573B000B15D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41560FA4256573B000B15D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,9 +127,22 @@
 			children = (
 				41443D4A257CD0BE0073CAEB /* Home.swift */,
 				41F338592573FEB6009E5114 /* NaviView.swift */,
+				415102412580F87500883A81 /* ARNaviView.swift */,
 				41443D45257CD0820073CAEB /* MY.swift */,
 			);
 			path = Tabview;
+			sourceTree = "<group>";
+		};
+		4151021C2580F14700883A81 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4151022B2580F68400883A81 /* 1_floor.usdz */,
+				4151022A2580F68400883A81 /* 2_floor.usdz */,
+				415102292580F68400883A81 /* 3_floor.usdz */,
+				4151022C2580F68400883A81 /* 4_floor.usdz */,
+				4151022D2580F68400883A81 /* 5_floor.usdz */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		41560F96256573B000B15D5D = {
@@ -143,10 +170,12 @@
 		41560FA1256573B000B15D5D /* CampusMaps */ = {
 			isa = PBXGroup;
 			children = (
+				4151021C2580F14700883A81 /* Objects */,
 				41560FA2256573B000B15D5D /* AppDelegate.swift */,
 				41560FA4256573B000B15D5D /* ContentView.swift */,
 				41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */,
 				41443D40257CCED70073CAEB /* Content_pre.swift */,
+				4151021D2580F19300883A81 /* ObjectView.swift */,
 				41F3380B25739CEE009E5114 /* SideMenu.swift */,
 				41443D4F257CD0D30073CAEB /* Tabview */,
 				416306482566314800CD8578 /* NaverMapView.swift */,
@@ -300,6 +329,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4151022E2580F68400883A81 /* 3_floor.usdz in Resources */,
+				4151022F2580F68400883A81 /* 2_floor.usdz in Resources */,
+				415102302580F68400883A81 /* 1_floor.usdz in Resources */,
+				415102312580F68400883A81 /* 4_floor.usdz in Resources */,
+				415102322580F68400883A81 /* 5_floor.usdz in Resources */,
 				4162AA6D256E207900D77415 /* Launch Screen.storyboard in Resources */,
 				41560FAC256573B100B15D5D /* Preview Assets.xcassets in Resources */,
 				41560FA9256573B100B15D5D /* Assets.xcassets in Resources */,
@@ -374,11 +408,13 @@
 				41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */,
 				41443D57257CD6CC0073CAEB /* CustomNavigationView.swift in Sources */,
 				41443D4B257CD0BE0073CAEB /* Home.swift in Sources */,
+				415102422580F87500883A81 /* ARNaviView.swift in Sources */,
 				41443D46257CD0820073CAEB /* MY.swift in Sources */,
 				4162AA782570109000D77415 /* LocationManager.swift in Sources */,
 				41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */,
 				416306492566314800CD8578 /* NaverMapView.swift in Sources */,
 				41F3385A2573FEB6009E5114 /* NaviView.swift in Sources */,
+				4151021E2580F19300883A81 /* ObjectView.swift in Sources */,
 				41443D41257CCED70073CAEB /* Content_pre.swift in Sources */,
 				41560FA7256573B000B15D5D /* Experience.rcproject in Sources */,
 			);

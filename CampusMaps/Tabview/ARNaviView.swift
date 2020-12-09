@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct ARNaviView: View {
+    
+    @State var ObjectShow = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+          
+            ZStack {
+                VStack {
+                    ARViewContainer()
+                    
+                    if(ObjectShow == true) {
+                        ObjectView()
+                    }
+                    else {
+                        NaverMapView()
+                    }
+                }
+            }
+            .navigationBarTitle("AR Navigation")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(leading: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+            }), trailing: Button(action: {
+                withAnimation {
+                    self.ObjectShow.toggle()
+                }
+            }) {
+                Text("3D Object")
+            })
+        }
     }
 }
 
