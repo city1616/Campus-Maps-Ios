@@ -5,4 +5,5 @@ use_frameworks!
 target 'CampusMaps' do
 	pod 'NMapsMap'
 	pod 'Mapbox-iOS-SDK', '~> 6.3.0'
+	pod 'MapboxNavigation', '~> 1.0'
 end

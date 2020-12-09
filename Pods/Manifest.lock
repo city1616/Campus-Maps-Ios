@@ -1,24 +1,68 @@
 PODS:
   - Mapbox-iOS-SDK (6.3.0):
     - MapboxMobileEvents (~> 0.10.4)
+  - MapboxAccounts (2.3.0)
+  - MapboxCommon (7.1.2)
+  - MapboxCoreNavigation (1.1.0):
+    - MapboxAccounts (~> 2.3.0)
+    - MapboxDirections (~> 1.0)
+    - MapboxMobileEvents (~> 0.10.2)
+    - MapboxNavigationNative (~> 22.0)
+    - Turf (~> 1.0)
+  - MapboxDirections (1.1.0):
+    - Polyline (~> 5.0)
+    - Turf (~> 1.0)
   - MapboxMobileEvents (0.10.6)
+  - MapboxNavigation (1.1.0):
+    - Mapbox-iOS-SDK (~> 6.0)
+    - MapboxCoreNavigation (= 1.1.0)
+    - MapboxMobileEvents (~> 0.10.2)
+    - MapboxSpeech (~> 1.0)
+    - Solar (~> 2.1)
+  - MapboxNavigationNative (22.0.5):
+    - MapboxCommon (= 7.1.2)
+  - MapboxSpeech (1.0.0)
   - NMapsMap (3.10.0)
+  - Polyline (5.0.2)
+  - Solar (2.1.0)
+  - Turf (1.1.0)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 6.3.0)
+  - MapboxNavigation (~> 1.0)
   - NMapsMap
 
 SPEC REPOS:
   trunk:
     - Mapbox-iOS-SDK
+    - MapboxAccounts
+    - MapboxCommon
+    - MapboxCoreNavigation
+    - MapboxDirections
     - MapboxMobileEvents
+    - MapboxNavigation
+    - MapboxNavigationNative
+    - MapboxSpeech
     - NMapsMap
+    - Polyline
+    - Solar
+    - Turf
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 2563ed87ead6ec08f1c2090873977b8a7be335a8
+  MapboxAccounts: 84abfdde95d9dc483f604c1b0fe1861edf691ce7
+  MapboxCommon: e469f6c62de29e1906c37e0bce65f6826e7fb9ac
+  MapboxCoreNavigation: 1e859a9660eb8558fe5ab2dbe7d6ef396d9d9b0c
+  MapboxDirections: f47e5648051967c502897cf808090874e3f81c5d
   MapboxMobileEvents: 5ef561e6b6f9cbff2900d62a52322e75d1a7dfdf
+  MapboxNavigation: 691654844491013223c083f519754886fa33b248
+  MapboxNavigationNative: 88f243e0460fc7d1d50035bf13583355da6e4c26
+  MapboxSpeech: 4b3aea42e35d056fae1d7ad847a9fc0f412d911e
   NMapsMap: 17caab4af9a3fc5c25b79858de18bdeab1eaff87
+  Polyline: fce41d72e1146c41c6d081f7656827226f643dff
+  Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
+  Turf: 62a818ddce6c1af8d54da9d56232088d170ab27b
 
-PODFILE CHECKSUM: 9705c1a51d0a7ead7da22383f127226f9535bd6a
+PODFILE CHECKSUM: 8f1120b80ff1a8edf299aea7d1344b30dbb5d78d
 
 COCOAPODS: 1.10.0
