@@ -21,8 +21,6 @@ struct ContentView : View {
 
     @State var selectedView = 0 // TabView index
     
-    
-
     var body: some View {
 
         TabView(selection: $selectedView) {
@@ -46,11 +44,14 @@ struct ContentView : View {
                     Image(systemName: "map")
                     Text("MAP")
                 }
-            CustomNavigationView(view: NaviView(), onSearch: { (txt) in
-                print("NaviView")
-            }, onCancel: {
-                print("NaviView Cancel")
-            })
+//            CustomNavigationView(view: AnyView(NaviView()), placeHolder: "Search", largeTitle: false, title: "Campus Maps", onSearch: { (txt) in
+//                if txt != "" {
+//
+//                }
+//            }, onCancel: {
+//                print("NaviView Cancel")
+//            })
+            NaviView()
             .edgesIgnoringSafeArea(.all)
                 .tag(2)
                 .tabItem {

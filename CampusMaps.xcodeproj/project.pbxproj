@@ -18,6 +18,7 @@
 		415102312580F68400883A81 /* 4_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022C2580F68400883A81 /* 4_floor.usdz */; };
 		415102322580F68400883A81 /* 5_floor.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4151022D2580F68400883A81 /* 5_floor.usdz */; };
 		415102422580F87500883A81 /* ARNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415102412580F87500883A81 /* ARNaviView.swift */; };
+		415102632581276200883A81 /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415102622581276200883A81 /* SchoolInfo.swift */; };
 		41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA2256573B000B15D5D /* AppDelegate.swift */; };
 		41560FA5256573B000B15D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA4256573B000B15D5D /* ContentView.swift */; };
 		41560FA7256573B000B15D5D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 41560FA6256573B000B15D5D /* Experience.rcproject */; };
@@ -64,6 +65,7 @@
 		4151022C2580F68400883A81 /* 4_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 4_floor.usdz; sourceTree = "<group>"; };
 		4151022D2580F68400883A81 /* 5_floor.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 5_floor.usdz; sourceTree = "<group>"; };
 		415102412580F87500883A81 /* ARNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNaviView.swift; sourceTree = "<group>"; };
+		415102622581276200883A81 /* SchoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
 		41560F9F256573B000B15D5D /* CampusMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41560FA2256573B000B15D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41560FA4256573B000B15D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				41560FA4256573B000B15D5D /* ContentView.swift */,
 				41443D56257CD6CC0073CAEB /* CustomNavigationView.swift */,
 				41443D40257CCED70073CAEB /* Content_pre.swift */,
+				415102622581276200883A81 /* SchoolInfo.swift */,
 				4151021D2580F19300883A81 /* ObjectView.swift */,
 				41F3380B25739CEE009E5114 /* SideMenu.swift */,
 				41443D4F257CD0D30073CAEB /* Tabview */,
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41560FA5256573B000B15D5D /* ContentView.swift in Sources */,
+				415102632581276200883A81 /* SchoolInfo.swift in Sources */,
 				41F3385F2573FF55009E5114 /* NaviMapView.swift in Sources */,
 				41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */,
 				41443D57257CD6CC0073CAEB /* CustomNavigationView.swift in Sources */,

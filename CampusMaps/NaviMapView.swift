@@ -7,6 +7,9 @@
 
 import SwiftUI
 import Mapbox
+import MapboxCoreNavigation
+import MapboxNavigation
+import MapboxDirections
 
 extension MGLPointAnnotation {
     convenience init(title: String, coordinate: CLLocationCoordinate2D) {
@@ -22,6 +25,8 @@ struct NaviMapView: UIViewRepresentable {
     
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     var userLocationButton: UserLocationButton?
+    var routeOptions: NavigationRouteOptions?
+    var route: Route?
     
     // MARK: - Configuring UIViewRepresentable protocol
     

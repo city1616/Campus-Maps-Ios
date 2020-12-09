@@ -13,14 +13,21 @@ struct CustomNavigationView: UIViewControllerRepresentable {
         return CustomNavigationView.Coordinator(parent: self)
     }
     
-    var view: NaviView
+    var view: AnyView
+    
+    var largeTitle: Bool
+    var title: String
+    var placeHolder: String
     
     // onSearch And OnCancel Closures
     var onSearch: (String) -> ()
     var onCancel: ()->()
     
     //requre closure on call
-    init(view: NaviView, onSearch: @escaping (String)->(), onCancel: @escaping ()->()) {
+    init(view: AnyView, placeHolder: String? = "Search", largeTitle: Bool? = true, title: String, onSearch: @escaping (String)->(), onCancel: @escaping ()->()) {
+        self.title = title
+        self.largeTitle = largeTitle!
+        self.placeHolder = placeHolder!
         self.view = view
         self.onSearch = onSearch
         self.onCancel = onCancel
@@ -28,16 +35,18 @@ struct CustomNavigationView: UIViewControllerRepresentable {
   
     func makeUIViewController(context: Context) -> UINavigationController {
         
+        // requires SwiftUI View
         let childView = UIHostingController(rootView: view)
         
         let controller = UINavigationController(rootViewController: childView)
         
-        controller.navigationBar.topItem?.title = "Campus Maps"
-        controller.navigationBar.prefersLargeTitles = false
+        // Nav Bar Data
+        controller.navigationBar.topItem?.title = title
+        controller.navigationBar.prefersLargeTitles = largeTitle
         
-        // search Bar ...
+        // search Bar
         let searchController = UISearchController()
-        searchController.searchBar.placeholder = "검색하기"
+        searchController.searchBar.placeholder = placeHolder
         
         // setting delegate
         searchController.searchBar.delegate = context.coordinator
@@ -49,12 +58,15 @@ struct CustomNavigationView: UIViewControllerRepresentable {
         controller.navigationBar.topItem?.hidesSearchBarWhenScrolling = false
         
         // disabling dim bg..
-        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = true
         
         return controller
     }
     
     func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+        uiViewController.navigationBar.topItem?.title = title
+        uiViewController.navigationBar.topItem?.searchController?.searchBar.placeholder = placeHolder
+        uiViewController.navigationBar.prefersLargeTitles = largeTitle
         
     }
     

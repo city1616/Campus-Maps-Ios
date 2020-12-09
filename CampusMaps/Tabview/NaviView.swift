@@ -59,14 +59,29 @@ struct NaviView: View {
         MGLPointAnnotation(title: "SW중심대학사업단", coordinate: .init(latitude: 35.968531, longitude: 126.953238))
     ]
     
+    
+    @State var filteredSchool = School
+    
     let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     // var mode: MGLUserTrackingMode
     
     // @State var showlocation = false
     
     var body: some View {
+        ForEach(filteredSchool) { item in
+            
+        }
         ZStack {
-            NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)
+            CustomNavigationView(view: AnyView(NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)), placeHolder: "Search", largeTitle: false, title: "Campus Maps", onSearch: { (txt) in
+                if txt != "" {
+                    self.filteredSchool = School.filter{$0.name.lowercased().contains(txt.lowercased())}
+                }
+                else {
+                    self.filteredSchool = School
+                }
+            }, onCancel: {
+                print("NAviView Cancle")
+            })
             VStack {
                 Spacer()
                 
@@ -99,3 +114,4 @@ struct NaviView_Previews: PreviewProvider {
         NaviView()
     }
 }
+
