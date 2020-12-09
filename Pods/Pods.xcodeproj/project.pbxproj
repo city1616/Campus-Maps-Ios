@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = MapboxCommon;
+			productName = MapboxCommon;
 		};
 		6746AB6F4D992402B59D1651512EA19E /* Mapbox-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
@@ -27,6 +28,7 @@
 				7BA42C5CBDE4F296B2AFE2C2518BDDCF /* PBXTargetDependency */,
 			);
 			name = "Mapbox-iOS-SDK";
+			productName = "Mapbox-iOS-SDK";
 		};
 		8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */ = {
 			isa = PBXAggregateTarget;
@@ -36,6 +38,7 @@
 			dependencies = (
 			);
 			name = NMapsMap;
+			productName = NMapsMap;
 		};
 		EC415FB3D7B47A1F7F5FDFCE947BC6DF /* MapboxAccounts */ = {
 			isa = PBXAggregateTarget;
@@ -45,6 +48,7 @@
 			dependencies = (
 			);
 			name = MapboxAccounts;
+			productName = MapboxAccounts;
 		};
 		F4966F66FDFA518B3F8C8502BD0F7136 /* MapboxNavigationNative */ = {
 			isa = PBXAggregateTarget;
@@ -56,6 +60,7 @@
 				371E009545D22035213CA4FE62FB0123 /* PBXTargetDependency */,
 			);
 			name = MapboxNavigationNative;
+			productName = MapboxNavigationNative;
 		};
 /* End PBXAggregateTarget section */
 
@@ -588,7 +593,7 @@
 /* Begin PBXFileReference section */
 		003D2D4BA354E39F63ED0082F06D2C4D /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = sv.lproj/Navigation.strings; sourceTree = "<group>"; };
 		00B4D8B036919A9B1E86174CA6B126F5 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = it.lproj/Navigation.strings; sourceTree = "<group>"; };
-		00CB61DE26B9173C02CE35C2FFFE6CE8 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = tr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		00CB61DE26B9173C02CE35C2FFFE6CE8 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = tr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		0141917FAC68E0A0779F912D1C0EBE2E /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D7312006336B1C09D3303C1403EE56 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
 		01DABE5181E60C16EB13F162AF16D214 /* WaypointStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaypointStyle.swift; path = MapboxNavigation/WaypointStyle.swift; sourceTree = "<group>"; };
@@ -634,7 +639,7 @@
 		1634C1D7F38C137A0399B72A18702C2C /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = uk.lproj/Navigation.strings; sourceTree = "<group>"; };
 		166348A39CB885EC4A8280EB1840AD7E /* MapboxCoreNavigation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxCoreNavigation-dummy.m"; sourceTree = "<group>"; };
 		16EA21A1EC9EAAD158A0B087685B7AE8 /* MapboxNavigation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxNavigation-dummy.m"; sourceTree = "<group>"; };
-		1737FA944AFE58690DA370739B0A0E58 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = el.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		1737FA944AFE58690DA370739B0A0E58 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = el.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		177F327D2983AD67CF9F23C99714D5A2 /* RouteVoiceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteVoiceController.swift; path = MapboxNavigation/RouteVoiceController.swift; sourceTree = "<group>"; };
 		193AA3E917E05908EC128294C9987176 /* MapboxSpeechSynthesizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxSpeechSynthesizer.swift; path = MapboxNavigation/MapboxSpeechSynthesizer.swift; sourceTree = "<group>"; };
 		1943DFD89A612D4AE1AFEA351A80F622 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = MapboxNavigation/Dictionary.swift; sourceTree = "<group>"; };
@@ -647,7 +652,7 @@
 		1D94DFEAE27CE76BCD3D1D71F3A887C1 /* GeometryCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeometryCollection.swift; path = Sources/Turf/Geometries/GeometryCollection.swift; sourceTree = "<group>"; };
 		1DDCF04D096F91A7BF89B44EEBFB5D80 /* Turf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Turf-umbrella.h"; sourceTree = "<group>"; };
 		1E11F8727A2EA358D7578C2027AFF31E /* MapboxDirections-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections-umbrella.h"; sourceTree = "<group>"; };
-		1EE3A4D593AA5AC3FDAC17806EB29195 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE3A4D593AA5AC3FDAC17806EB29195 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6F5F246716918B52B255C235282D09 /* CarPlaySearchController+ CPSearchTemplateDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CarPlaySearchController+ CPSearchTemplateDelegate.swift"; path = "MapboxNavigation/CarPlaySearchController+ CPSearchTemplateDelegate.swift"; sourceTree = "<group>"; };
 		1FA34CBB22EC6CBEB9FB0BECE76C23FE /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = Sources/MapboxDirections/Extensions/Codable.swift; sourceTree = "<group>"; };
 		1FBE94CF830627C97C8FC901A2B3A051 /* DispatchTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimer.swift; path = MapboxCoreNavigation/DispatchTimer.swift; sourceTree = "<group>"; };
@@ -683,7 +688,7 @@
 		309B35BE428379410B0D8F8E13D9E185 /* FeatureIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureIdentifier.swift; path = Sources/Turf/FeatureIdentifier.swift; sourceTree = "<group>"; };
 		31624DC2E21A6705BF7971D914141485 /* MMECertPin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECertPin.m; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMECertPin.m; sourceTree = "<group>"; };
 		31F7735E8C7DD9F9365D2D1F0B147355 /* Incident.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Incident.swift; path = Sources/MapboxDirections/Incident.swift; sourceTree = "<group>"; };
-		31F7AD982BE4DC3DF5F8FD24AF2EE141 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxCoreNavigation.framework; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F7AD982BE4DC3DF5F8FD24AF2EE141 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		323B9CE4A77AB2BF405F2171F8378D33 /* DistanceFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DistanceFormatter.swift; path = MapboxCoreNavigation/DistanceFormatter.swift; sourceTree = "<group>"; };
 		32FA6BE5B4458C3AF42012A7574C6B94 /* Pods-CampusMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CampusMaps.release.xcconfig"; sourceTree = "<group>"; };
 		334C4FD39ECA5FB8FCA12D62E127FAA1 /* Ring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ring.swift; path = Sources/Turf/Ring.swift; sourceTree = "<group>"; };
@@ -698,12 +703,12 @@
 		37C93C4CE0DEF6C9B60416919DD2359E /* MMETypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETypes.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMETypes.h; sourceTree = "<group>"; };
 		37FA427D6C246D2AE581037EC61CDD1F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		382D6E8A3465255E1491B8F744F8F3EE /* MGLMapView+MGLNavigationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGLMapView+MGLNavigationAdditions.h"; path = "MapboxNavigation/MGLMapView+MGLNavigationAdditions.h"; sourceTree = "<group>"; };
-		3876F49C2AD6BB86CA40DE172D58AC61 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxNavigation.framework; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3876F49C2AD6BB86CA40DE172D58AC61 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3903E6ABBFE430DA9FD17413974BF9B0 /* CLLocationManager+MMEMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+MMEMobileEvents.h"; path = "Sources/MapboxMobileEvents/include/MapboxMobileEvents/CLLocationManager+MMEMobileEvents.h"; sourceTree = "<group>"; };
 		390C02CA1FC442D6395ACA89B136EF11 /* RouteRefreshResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteRefreshResponse.swift; path = Sources/MapboxDirections/RouteRefreshResponse.swift; sourceTree = "<group>"; };
 		3979EED4D291122783DA75576BEE944F /* RouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteStep.swift; path = MapboxCoreNavigation/RouteStep.swift; sourceTree = "<group>"; };
 		39D40125F7CAE6A4C13406D50588D9AE /* Intersection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Intersection.swift; path = Sources/MapboxDirections/Intersection.swift; sourceTree = "<group>"; };
-		3A7991840642437DEA15B7DF1C5EB737 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		3A7991840642437DEA15B7DF1C5EB737 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		3A87AFD96731424B488271082348C1C0 /* RefreshedRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshedRoute.swift; path = Sources/MapboxDirections/RefreshedRoute.swift; sourceTree = "<group>"; };
 		3AE7ECBAEC5EF6A7C1551A96258348AE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B06E5E5385E1EBA670117FFA7DCC89B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -714,11 +719,11 @@
 		402F4A3BD8990C4F88CEF5EAA85618AA /* UnimplementedLogging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnimplementedLogging.swift; path = MapboxCoreNavigation/UnimplementedLogging.swift; sourceTree = "<group>"; };
 		4366D76E5157665AA664E73F526892BC /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = "zh-Hant.lproj/Navigation.strings"; sourceTree = "<group>"; };
 		4460A4B5B2877078088D9C72FE002336 /* NextBannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NextBannerView.swift; path = MapboxNavigation/NextBannerView.swift; sourceTree = "<group>"; };
-		44C9135D0976359BD121241ECFD9F112 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = sv.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		44C9135D0976359BD121241ECFD9F112 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = sv.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		4509D87818A86F37F7BA3A9434E3CB3F /* VisualInstructionBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualInstructionBanner.swift; path = Sources/MapboxDirections/VisualInstructionBanner.swift; sourceTree = "<group>"; };
 		45B75744D1932CEEEA44EB78D95D4386 /* ResponseDisposition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseDisposition.swift; path = Sources/MapboxDirections/ResponseDisposition.swift; sourceTree = "<group>"; };
 		47F2706EE3BF22DCC6F29907615CEF05 /* Pods-CampusMaps-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CampusMaps-frameworks.sh"; sourceTree = "<group>"; };
-		483D44A3EF18EDD11658FB73DE74DA5A /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = yo.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		483D44A3EF18EDD11658FB73DE74DA5A /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = yo.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		48AA1DD2BDC842FB6532800F57A68D85 /* Directions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Directions.swift; path = Sources/MapboxDirections/Directions.swift; sourceTree = "<group>"; };
 		4A9DF7450EBD10F928C91D19FACF693C /* MGLVectorTileSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGLVectorTileSource.swift; path = MapboxNavigation/MGLVectorTileSource.swift; sourceTree = "<group>"; };
 		4BB7A72EB202C952ACD64439E80FBEF9 /* Measurement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Measurement.swift; path = Sources/MapboxDirections/Extensions/Measurement.swift; sourceTree = "<group>"; };
@@ -732,10 +737,10 @@
 		4E80498FD2287451D6C5716B267E8578 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = he.lproj/Navigation.strings; sourceTree = "<group>"; };
 		4EAF35A89845B52DBD584EA0DF5256B2 /* NavigationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationView.swift; path = MapboxNavigation/NavigationView.swift; sourceTree = "<group>"; };
 		4F51DB4A374D761719B28A76E2B297BE /* RouteState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteState.swift; path = MapboxCoreNavigation/RouteState.swift; sourceTree = "<group>"; };
-		4FDBB74F914C90BA91588FA290A492C1 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		4FDBB74F914C90BA91588FA290A492C1 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		5014154F31A996B2733CEB1217D24063 /* NavigationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationService.swift; path = MapboxCoreNavigation/NavigationService.swift; sourceTree = "<group>"; };
 		502BEF0C15A0A32964C8BF260E9DD93A /* RouteResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteResponse.swift; path = Sources/MapboxDirections/RouteResponse.swift; sourceTree = "<group>"; };
-		504CE9473CDB9F0B95C72BA4BF8F4273 /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Turf.framework; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504CE9473CDB9F0B95C72BA4BF8F4273 /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51081AB827D75E291B8B1BFEC8817B89 /* NMapsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsMap.debug.xcconfig; sourceTree = "<group>"; };
 		5205F92E1D93F28A601518A41E301D47 /* Solar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Solar.modulemap; sourceTree = "<group>"; };
 		53742E14C84EC7C4F77FE261E9CF3C34 /* Polyline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.release.xcconfig; sourceTree = "<group>"; };
@@ -746,7 +751,7 @@
 		56701708D75CFFF0AE69D407D081BBE3 /* MapboxNavigation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MapboxNavigation-Info.plist"; sourceTree = "<group>"; };
 		56B1E9829E9E3F0C6D0D7B92C771D71A /* MMECommonEventData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECommonEventData.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMECommonEventData.h; sourceTree = "<group>"; };
 		5824CBD768126795EB6252D52E8E35CE /* MMEEventsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsManager.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEEventsManager.h; sourceTree = "<group>"; };
-		5828402B13390B50E553828E85C8B64A /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		5828402B13390B50E553828E85C8B64A /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		5841C5D74C9F6B7BF4A051150E705027 /* Constants+InstructionsCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Constants+InstructionsCard.swift"; path = "MapboxNavigation/Constants+InstructionsCard.swift"; sourceTree = "<group>"; };
 		58962677BF5093B2F41F6B9C0E80548A /* InstructionLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstructionLabel.swift; path = MapboxNavigation/InstructionLabel.swift; sourceTree = "<group>"; };
 		59097632379572442F5DFE3681E71729 /* MBSpeechOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBSpeechOptions.swift; path = Sources/MapboxSpeech/MBSpeechOptions.swift; sourceTree = "<group>"; };
@@ -757,14 +762,14 @@
 		5B659B52F755AE91078AF37640859767 /* MMECategoryLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECategoryLoader.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMECategoryLoader.h; sourceTree = "<group>"; };
 		5CC91B21EAEC953CEF1DB2C5A53F5A74 /* MapboxNavigationNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxNavigationNative.debug.xcconfig; sourceTree = "<group>"; };
 		5CD4CCEC97FFDA5EF55736DB5712D512 /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = Sources/Turf/Geometries/Polygon.swift; sourceTree = "<group>"; };
-		5E672A08F4AAA98AFD7357E50CE51D57 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		5E672A08F4AAA98AFD7357E50CE51D57 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		5F5E65369F285D5CE034A5998692F75F /* Pods-CampusMaps-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CampusMaps-acknowledgements.plist"; sourceTree = "<group>"; };
 		5FB678C59BC905EC84EEF81C3A9EF430 /* NSProcessInfo+SystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSProcessInfo+SystemInfo.m"; path = "Sources/MapboxMobileEvents/include/MapboxMobileEvents/NSProcessInfo+SystemInfo.m"; sourceTree = "<group>"; };
 		60741293C131444E9B3E7A3C7611A9C0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = MapboxNavigation/Error.swift; sourceTree = "<group>"; };
 		60D4BE8FD46A59474E7FD87310541C39 /* MapboxSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxSpeech.modulemap; sourceTree = "<group>"; };
 		61087BCD5D954F54A307B2AEB56FD334 /* MapboxSpeech-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MapboxSpeech-Info.plist"; sourceTree = "<group>"; };
 		612982B00FD93134C8FF0E73375345E0 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = MapboxNavigation/CGSize.swift; sourceTree = "<group>"; };
-		619AF54577BCFC5FFBDFFA8D1244E4B0 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		619AF54577BCFC5FFBDFFA8D1244E4B0 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		623217E9218E6A54C4A3F688272BF67B /* Solar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Solar-umbrella.h"; sourceTree = "<group>"; };
 		62AA1C86816B80352B90FA6A34F67E23 /* CarPlayMapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarPlayMapViewController.swift; path = MapboxNavigation/CarPlayMapViewController.swift; sourceTree = "<group>"; };
 		6357E5EA5AFE1AA42C033E9AE9F6C62A /* FeedbackSubtypeCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedbackSubtypeCollectionViewCell.swift; path = MapboxNavigation/FeedbackSubtypeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -809,14 +814,14 @@
 		7528F6DFD631BA0499083183CB07BAEE /* LaneView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LaneView.swift; path = MapboxNavigation/LaneView.swift; sourceTree = "<group>"; };
 		7583F6B4EBECBB92B1B1F19D640081B0 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AD05585F721D7E8E3D42B3451F4979 /* StepsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepsViewController.swift; path = MapboxNavigation/StepsViewController.swift; sourceTree = "<group>"; };
-		76013CDFC9BB5F0E7EF11F2D0845AC35 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		76013CDFC9BB5F0E7EF11F2D0845AC35 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		76102F32907F236AFE4EBB30A011039D /* StyleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleType.swift; path = MapboxNavigation/StyleType.swift; sourceTree = "<group>"; };
 		768D9978B3A840C89768FD6CB4C6494A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77C4813D3BE3B86D0A8543259648E819 /* MMEDependencyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEDependencyManager.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEDependencyManager.h; sourceTree = "<group>"; };
 		78761D6343DD6D852B881515FFB1B1A4 /* DirectionsOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectionsOptions.swift; path = Sources/MapboxDirections/DirectionsOptions.swift; sourceTree = "<group>"; };
 		79C23EEF584DDBEB08FC7043E1341C09 /* LanesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanesView.swift; path = MapboxNavigation/LanesView.swift; sourceTree = "<group>"; };
 		7C53BB87527BAFF5110C0758F7ADE647 /* RouteController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteController.swift; path = MapboxCoreNavigation/RouteController.swift; sourceTree = "<group>"; };
-		7CDFA2DAE745FD57264494A16D3C14B6 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxMobileEvents.framework; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDFA2DAE745FD57264494A16D3C14B6 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F03E4D521C467BBD150172B07BB28D7 /* CLLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CLLocation.swift; path = MapboxCoreNavigation/CLLocation.swift; sourceTree = "<group>"; };
 		803ED07A8EE8551F77A9D2893CEE893F /* LineString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineString.swift; path = Sources/Turf/Geometries/LineString.swift; sourceTree = "<group>"; };
 		8116EA169B0ABE3A7FCFDB608938CF55 /* ManeuversStyleKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManeuversStyleKit.swift; path = MapboxNavigation/ManeuversStyleKit.swift; sourceTree = "<group>"; };
@@ -861,8 +866,8 @@
 		9B250A2DF149EB7010C7577B2E0CF059 /* DirectionsProfileIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectionsProfileIdentifier.swift; path = Sources/MapboxDirections/DirectionsProfileIdentifier.swift; sourceTree = "<group>"; };
 		9C58E35F40DEBDD01EDBBA9115E16EE9 /* RouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteLeg.swift; path = Sources/MapboxDirections/RouteLeg.swift; sourceTree = "<group>"; };
 		9CD37AC9B179CEA815B98FB27F2AB1C4 /* RouteLegProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteLegProgress.swift; path = MapboxCoreNavigation/RouteLegProgress.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DBE0F4386C8D7F4231605D6E14857C1 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ko.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBE0F4386C8D7F4231605D6E14857C1 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ko.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9DD07EB5C81072077363403CAA37E409 /* MapboxCoreNavigation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxCoreNavigation.modulemap; sourceTree = "<group>"; };
 		9EE74B1C83A5580FD9DF3AE2A867B863 /* Solar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Solar-prefix.pch"; sourceTree = "<group>"; };
 		A01B5EEFC16D433D260F7FFE6E554E1C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -875,7 +880,7 @@
 		A5ACC107048B2435C1EF2E5CE3EB7B1E /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = MapboxNavigation/Constants.swift; sourceTree = "<group>"; };
 		A72EF5EC2725323868B2C0561465243C /* MapboxDirections.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxDirections.modulemap; sourceTree = "<group>"; };
 		A9CE8BEE16B2A6EA5601A2DF40F3A6CE /* SpokenInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpokenInstruction.swift; path = Sources/MapboxDirections/SpokenInstruction.swift; sourceTree = "<group>"; };
-		AA04B09EB5CE65B9BECD1E6AD40DF52E /* MapboxCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxCommon.xcframework; sourceTree = "<group>"; };
+		AA04B09EB5CE65B9BECD1E6AD40DF52E /* MapboxCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = MapboxCommon.xcframework; sourceTree = "<group>"; };
 		AA08A7C36E778B87CBC4243FD4904754 /* InstructionsCardCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstructionsCardCell.swift; path = MapboxNavigation/InstructionsCardCell.swift; sourceTree = "<group>"; };
 		AA1EE164DC13BB4BCEAFC23679DCE79A /* DirectionsCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectionsCredentials.swift; path = Sources/MapboxDirections/DirectionsCredentials.swift; sourceTree = "<group>"; };
 		AA88445686022A066C6996CF79FFF54D /* MapboxDirections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.debug.xcconfig; sourceTree = "<group>"; };
@@ -891,11 +896,11 @@
 		B1274AA02A9EA37D02937A7D8364AD3C /* StatusView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusView.swift; path = MapboxNavigation/StatusView.swift; sourceTree = "<group>"; };
 		B1B0B667A2F9B48666B0C386622FEF00 /* ProcessInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessInfo.swift; path = MapboxCoreNavigation/ProcessInfo.swift; sourceTree = "<group>"; };
 		B23B80432A880EEDA3D9674C852FD662 /* NavigationMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationMapView.swift; path = MapboxNavigation/NavigationMapView.swift; sourceTree = "<group>"; };
-		B2C46ACB29D0F3C44236CF9985015282 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = da.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B2C46ACB29D0F3C44236CF9985015282 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = da.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		B3728E819EDDF55693AC9F24182609B1 /* InstructionsCardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstructionsCardViewController.swift; path = MapboxNavigation/InstructionsCardViewController.swift; sourceTree = "<group>"; };
 		B45CF4837B9317FDAF099AA91989E56E /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4B056BE7D17FBE229736270BF45B35B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B4FDC48D93DBBC3650AC0590A8E12A18 /* MapboxSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxSpeech.framework; path = MapboxSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4FDC48D93DBBC3650AC0590A8E12A18 /* MapboxSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BCFEAF80F759C128AE8E0B906D60A4 /* EndOfRouteViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EndOfRouteViewController.swift; path = MapboxNavigation/EndOfRouteViewController.swift; sourceTree = "<group>"; };
 		B5DEE309A88D20FE1AA9B08921762AFA /* JunctionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JunctionView.swift; path = MapboxNavigation/JunctionView.swift; sourceTree = "<group>"; };
 		B6A0593D097000932F4AF966E4ECE400 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = fr.lproj/Navigation.strings; sourceTree = "<group>"; };
@@ -904,14 +909,14 @@
 		B7579869DED6EF9AE01AC0D0E80F4C0D /* MMEEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEvent.m; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEEvent.m; sourceTree = "<group>"; };
 		B87BC33E749C0A8D3DA5876AE3AFD6FF /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = Sources/Turf/Geometry.swift; sourceTree = "<group>"; };
 		B8A0AA6C135B9F65B30B03C05EBD142A /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/MapboxDirections/MapMatching/Match.swift; sourceTree = "<group>"; };
-		B8FD1901EF1975AB5254FA1F2E21AFD8 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = uk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B8FD1901EF1975AB5254FA1F2E21AFD8 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = uk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		B987CB967CA20F29A9A6C53749EAC5DA /* URLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSession.swift; path = MapboxCoreNavigation/URLSession.swift; sourceTree = "<group>"; };
-		BA4B915C6138E4B65107CA9E4FCF0BDB /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = "pt-PT.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
-		BA557F3BD3F54927F312DA1A6EC1F60D /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		BA4B915C6138E4B65107CA9E4FCF0BDB /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = "pt-PT.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		BA557F3BD3F54927F312DA1A6EC1F60D /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		BA6F9383E194BD4C8B4C8A7D73EDA93E /* MMECategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECategoryLoader.m; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMECategoryLoader.m; sourceTree = "<group>"; };
 		BA7D3DB61BF98A32176C5FDF521ED142 /* RoadClasses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoadClasses.swift; path = Sources/MapboxDirections/RoadClasses.swift; sourceTree = "<group>"; };
 		BAA7E994B655889F178C8987C8A06D20 /* MapboxCoreNavigation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MapboxCoreNavigation-Info.plist"; sourceTree = "<group>"; };
-		BB66B1065F4F35C19BCBBFB5D408FDAD /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Solar.framework; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB66B1065F4F35C19BCBBFB5D408FDAD /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB709467DE2F028341A592C6B4578E42 /* MapboxNavigation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxNavigation.modulemap; sourceTree = "<group>"; };
 		BC3B5AA59D88E9E9935C13B67DE62E40 /* CLLocation+MMEMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocation+MMEMobileEvents.h"; path = "Sources/MapboxMobileEvents/include/MapboxMobileEvents/CLLocation+MMEMobileEvents.h"; sourceTree = "<group>"; };
 		BCC5746C625A7D49E87B7FE22035B072 /* NavigationCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationCustomizable.swift; path = MapboxNavigation/NavigationCustomizable.swift; sourceTree = "<group>"; };
@@ -932,7 +937,7 @@
 		C244CF8E187DA64131752E3DB4EB7A2C /* FeedbackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedbackViewController.swift; path = MapboxNavigation/FeedbackViewController.swift; sourceTree = "<group>"; };
 		C283CA3FFDB4AC028B3413F40A352298 /* MMEEventLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogger.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEEventLogger.h; sourceTree = "<group>"; };
 		C394AEF7DDD69ACC05AEE50D34B73CCD /* Waypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Waypoint.swift; path = Sources/MapboxDirections/Waypoint.swift; sourceTree = "<group>"; };
-		C41F1EB23B8F073DB2826B111A082B0E /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		C41F1EB23B8F073DB2826B111A082B0E /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		C486D62403FA8A28F660CA5A26D03D8C /* MGLStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGLStyle.swift; path = MapboxNavigation/MGLStyle.swift; sourceTree = "<group>"; };
 		C510D11D1ABE29E4AF89CAB8555F9A2B /* Pods-CampusMaps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CampusMaps-dummy.m"; sourceTree = "<group>"; };
 		C6497EBA45E1F3AD6D696552543FB3B8 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -961,7 +966,7 @@
 		D2C113FA48AF254AE3B36265C485FE78 /* SpeedLimitStyleKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeedLimitStyleKit.swift; path = MapboxNavigation/SpeedLimitStyleKit.swift; sourceTree = "<group>"; };
 		D400962FF9B9F11E70F0AC474EB32323 /* NMapsMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapsMap.framework; path = framework/NMapsMap.framework; sourceTree = "<group>"; };
 		D4A34C826B966372A716B9D614B63255 /* ScreenCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenCapture.swift; path = MapboxCoreNavigation/ScreenCapture.swift; sourceTree = "<group>"; };
-		D4C7CF87AE7EACC721FB7C5F265D70CA /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		D4C7CF87AE7EACC721FB7C5F265D70CA /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		D53F2B9445209ECA04BAE2B83FB70B48 /* FixLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixLocation.swift; path = MapboxCoreNavigation/FixLocation.swift; sourceTree = "<group>"; };
 		D5F27AA302C324DDBAD5995CA0611DE7 /* MMEEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEvent.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEEvent.h; sourceTree = "<group>"; };
 		D6263B04E0AD18E7EF1C0B873773DFDE /* RouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteLeg.swift; path = MapboxCoreNavigation/RouteLeg.swift; sourceTree = "<group>"; };
@@ -1011,7 +1016,7 @@
 		EA941E92E99C449D883A2FA542E8C0BD /* NSAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSAttributedString.swift; path = MapboxNavigation/NSAttributedString.swift; sourceTree = "<group>"; };
 		EAE09EF57F0B415B05AD69D91E477B24 /* MMECommonEventData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECommonEventData.m; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMECommonEventData.m; sourceTree = "<group>"; };
 		EB84DF86A46B510235D93A26A8AE172C /* MMEUIApplicationWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUIApplicationWrapper.h; path = Sources/MapboxMobileEvents/include/MapboxMobileEvents/MMEUIApplicationWrapper.h; sourceTree = "<group>"; };
-		ECC1AD8070AE1923BB2438AD19801AD0 /* Pods_CampusMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CampusMaps.framework; path = "Pods-CampusMaps.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC1AD8070AE1923BB2438AD19801AD0 /* Pods_CampusMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDF07091DF17B28CE3F0C99A2D7BD67 /* DirectionsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectionsResult.swift; path = Sources/MapboxDirections/DirectionsResult.swift; sourceTree = "<group>"; };
 		EEBFAAC6987667A2E021D85E958A97B5 /* RouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteOptions.swift; path = Sources/MapboxDirections/RouteOptions.swift; sourceTree = "<group>"; };
 		EF1178B3DC9B1541CA2E6B751E79E7F7 /* MGLMapView+MGLNavigationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MGLMapView+MGLNavigationAdditions.m"; path = "MapboxNavigation/MGLMapView+MGLNavigationAdditions.m"; sourceTree = "<group>"; };
@@ -1035,7 +1040,7 @@
 		F88AD0AE718D93C15CA43FD1D104E59C /* NavigationViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationViewControllerDelegate.swift; path = MapboxNavigation/NavigationViewControllerDelegate.swift; sourceTree = "<group>"; };
 		F981C080E8A00E2002178BD8282B63C5 /* MapboxDirections-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections-dummy.m"; sourceTree = "<group>"; };
 		F9CA409BC46C355E4AADE8AFBDF05252 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = vi.lproj/Navigation.strings; sourceTree = "<group>"; };
-		FA4C35B12F2D16AC355AAAA42676CB55 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxDirections.framework; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4C35B12F2D16AC355AAAA42676CB55 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAFEE40FB8A634C86EC0C4F1DE13DCA /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Sources/Polyline/Polyline.swift; sourceTree = "<group>"; };
 		FB278BCD8E90437ED34655F31F8617A8 /* Solar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Solar.debug.xcconfig; sourceTree = "<group>"; };
 		FBC11EFBABF169AEAEB59530A7F162CF /* SkuTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkuTokenProvider.swift; path = MapboxCoreNavigation/SkuTokenProvider.swift; sourceTree = "<group>"; };
@@ -1260,7 +1265,6 @@
 				D5C53A7E403AEBC2273CEE26479FA400 /* Resources */,
 				AABCC50B6A653278092AF0DD67C1FACF /* Support Files */,
 			);
-			name = MapboxNavigation;
 			path = MapboxNavigation;
 			sourceTree = "<group>";
 		};
@@ -1285,7 +1289,6 @@
 				383CDE23F750445D8E65D0330861CB84 /* Frameworks */,
 				026D0E0191E3B9128156AC19EDF98787 /* Support Files */,
 			);
-			name = NMapsMap;
 			path = NMapsMap;
 			sourceTree = "<group>";
 		};
@@ -1319,7 +1322,6 @@
 				AD6B085D9FBC1716DB590C0DC26A3D68 /* Solar.swift */,
 				62829EC470C115974E9909491331B310 /* Support Files */,
 			);
-			name = Solar;
 			path = Solar;
 			sourceTree = "<group>";
 		};
@@ -1329,7 +1331,6 @@
 				E771953E4BB916E0CE746B2CE25DAC61 /* Frameworks */,
 				36C8D4F9D53E2265E75F6961F2B6FDF5 /* Support Files */,
 			);
-			name = MapboxNavigationNative;
 			path = MapboxNavigationNative;
 			sourceTree = "<group>";
 		};
@@ -1373,7 +1374,6 @@
 				58D5307FE73558700C78E375FF9B4470 /* Frameworks */,
 				D209A2ACE5CEB2518570DC2AE209FD93 /* Support Files */,
 			);
-			name = "Mapbox-iOS-SDK";
 			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
@@ -1385,7 +1385,6 @@
 				FAAFEE40FB8A634C86EC0C4F1DE13DCA /* Polyline.swift */,
 				8D8BF93B51EECBCE207977007CF8E4A4 /* Support Files */,
 			);
-			name = Polyline;
 			path = Polyline;
 			sourceTree = "<group>";
 		};
@@ -1463,7 +1462,6 @@
 				59097632379572442F5DFE3681E71729 /* MBSpeechOptions.swift */,
 				04D61EDA30079085DE3DD76A841C662C /* Support Files */,
 			);
-			name = MapboxSpeech;
 			path = MapboxSpeech;
 			sourceTree = "<group>";
 		};
@@ -1518,7 +1516,6 @@
 				C394AEF7DDD69ACC05AEE50D34B73CCD /* Waypoint.swift */,
 				96ADB8C8C19CA52073FA544C9B8AC676 /* Support Files */,
 			);
-			name = MapboxDirections;
 			path = MapboxDirections;
 			sourceTree = "<group>";
 		};
@@ -1586,7 +1583,6 @@
 				8A697D18AEEE69C16F28D6489FCD24E1 /* UIKit+MMEMobileEvents.m */,
 				88D02190703118E77EB114E161016318 /* Support Files */,
 			);
-			name = MapboxMobileEvents;
 			path = MapboxMobileEvents;
 			sourceTree = "<group>";
 		};
@@ -1661,7 +1657,6 @@
 				5CBDD59B6F63DE283DA89F14CB72109A /* Frameworks */,
 				58CC109B6F7C156F1AD389E070586F84 /* Support Files */,
 			);
-			name = MapboxAccounts;
 			path = MapboxAccounts;
 			sourceTree = "<group>";
 		};
@@ -1705,7 +1700,6 @@
 				638AB24142EEA58A3162DC6C309EECE7 /* Turf.swift */,
 				32DDA3C42D17C315872C73B08FEEDEE4 /* Support Files */,
 			);
-			name = Turf;
 			path = Turf;
 			sourceTree = "<group>";
 		};
@@ -1797,7 +1791,6 @@
 				B987CB967CA20F29A9A6C53749EAC5DA /* URLSession.swift */,
 				BDD1F6A82A8365694B8B0E5D677E35E1 /* Support Files */,
 			);
-			name = MapboxCoreNavigation;
 			path = MapboxCoreNavigation;
 			sourceTree = "<group>";
 		};
@@ -1855,7 +1848,6 @@
 				10D19BA3C3555C1CA1769317A16D79DC /* Frameworks */,
 				A0B58A1BB5DE62020DE655DA8090141C /* Support Files */,
 			);
-			name = MapboxCommon;
 			path = MapboxCommon;
 			sourceTree = "<group>";
 		};
@@ -2190,6 +2182,33 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				bg,
+				ca,
+				da,
+				de,
+				el,
+				es,
+				fr,
+				he,
+				hu,
+				ja,
+				ko,
+				nl,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				sv,
+				tr,
+				uk,
+				vi,
+				yo,
+				"zh-Hans",
+				fa,
+				it,
+				lt,
+				sl,
+				"zh-Hant",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 11DE1F8A853EDDACC910EF38900633DD /* Products */;

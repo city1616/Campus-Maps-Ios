@@ -25,7 +25,7 @@ struct Home: View {
         return NavigationView {
             ZStack(alignment: .leading) {
                 VStack(alignment: .center, spacing: 0.0) {
-                    NaverMapView()
+                    Text("Campus Maps")
                 }
                 .offset(x: self.SideMenu ? UIScreen.main.bounds.width / 2 : 0)
                 .disabled(self.SideMenu ? true : false)

@@ -59,8 +59,38 @@ struct NaviView: View {
         MGLPointAnnotation(title: "SW중심대학사업단", coordinate: .init(latitude: 35.968531, longitude: 126.953238))
     ]
     
+    let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
+    // var mode: MGLUserTrackingMode
+    
+    // @State var showlocation = false
+    
     var body: some View {
-        NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)
+        ZStack {
+            NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                
+                HStack {
+//                    Button(action: {
+//                        withAnimation {
+//                            self.showlocation.toggle()
+//                        }
+//                    }, label: {
+//                        ZStack {
+//                            Circle()
+//                                .foregroundColor(.red)
+//                                .frame(width: 50, height: 50)
+//                                .opacity(0.5)
+//                            Image(systemName: "location.fill")
+//                                .font(.largeTitle)
+//                        }
+//                    })
+//                    .padding(10)
+                    
+                    Spacer()
+                }
+            }
+        }
     }
 }
 

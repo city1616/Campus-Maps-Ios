@@ -126,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				41443D4A257CD0BE0073CAEB /* Home.swift */,
+				416306482566314800CD8578 /* NaverMapView.swift */,
 				41F338592573FEB6009E5114 /* NaviView.swift */,
 				415102412580F87500883A81 /* ARNaviView.swift */,
 				41443D45257CD0820073CAEB /* MY.swift */,
@@ -178,7 +179,6 @@
 				4151021D2580F19300883A81 /* ObjectView.swift */,
 				41F3380B25739CEE009E5114 /* SideMenu.swift */,
 				41443D4F257CD0D30073CAEB /* Tabview */,
-				416306482566314800CD8578 /* NaverMapView.swift */,
 				4162AA772570109000D77415 /* LocationManager.swift */,
 				4162AA6C256E207900D77415 /* Launch Screen.storyboard */,
 				41F3385E2573FF55009E5114 /* NaviMapView.swift */,

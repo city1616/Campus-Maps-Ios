@@ -34,8 +34,14 @@ struct ContentView : View {
 //                print("From Canceled")
 //            })
             Home()
-                .edgesIgnoringSafeArea(.all)
                 .tag(0)
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("HOME")
+                }
+            NaverMapView()
+                .edgesIgnoringSafeArea(.all)
+                .tag(1)
                 .tabItem {
                     Image(systemName: "map")
                     Text("MAP")
@@ -46,22 +52,22 @@ struct ContentView : View {
                 print("NaviView Cancel")
             })
             .edgesIgnoringSafeArea(.all)
-                .tag(1)
+                .tag(2)
                 .tabItem {
                     Image(systemName: "location.circle")
                     Text("NAV")
                 }
             ARNaviView()
-                .tag(2)
+                .tag(3)
                 .tabItem {
                     Image(systemName: "arkit")
                     Text("AR")
                 }
             MY()
-                .tag(3)
+                .tag(4)
                 .tabItem {
-                    Image(systemName: "person.circle")
-                    Text("MY")
+                    Image(systemName: "person.fill")
+                    Text("HOME")
                 }
         }
 //         .edgesIgnoringSafeArea(.all)
