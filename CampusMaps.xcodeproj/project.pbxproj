@@ -29,6 +29,7 @@
 		4162AA6D256E207900D77415 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162AA6C256E207900D77415 /* Launch Screen.storyboard */; };
 		4162AA782570109000D77415 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162AA772570109000D77415 /* LocationManager.swift */; };
 		416306492566314800CD8578 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416306482566314800CD8578 /* NaverMapView.swift */; };
+		4189AAEB2582041300CCA4A8 /* AR_TEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189AAEA2582041300CCA4A8 /* AR_TEST.swift */; };
 		41F3380C25739CEE009E5114 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3380B25739CEE009E5114 /* SideMenu.swift */; };
 		41F3385A2573FEB6009E5114 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F338592573FEB6009E5114 /* NaviView.swift */; };
 		41F3385F2573FF55009E5114 /* NaviMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3385E2573FF55009E5114 /* NaviMapView.swift */; };
@@ -82,6 +83,7 @@
 		4162AA6C256E207900D77415 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4162AA772570109000D77415 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		416306482566314800CD8578 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		4189AAEA2582041300CCA4A8 /* AR_TEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_TEST.swift; sourceTree = "<group>"; };
 		41F3380B25739CEE009E5114 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		41F338592573FEB6009E5114 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
 		41F3385E2573FF55009E5114 /* NaviMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviMapView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				41443D4F257CD0D30073CAEB /* Tabview */,
 				4162AA772570109000D77415 /* LocationManager.swift */,
 				4162AA6C256E207900D77415 /* Launch Screen.storyboard */,
+				4189AAEA2582041300CCA4A8 /* AR_TEST.swift */,
 				41F3385E2573FF55009E5114 /* NaviMapView.swift */,
 				41560FA6256573B000B15D5D /* Experience.rcproject */,
 				41560FA8256573B100B15D5D /* Assets.xcassets */,
@@ -362,7 +365,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		1354AC79B50A06E242FAABF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -416,6 +419,7 @@
 				41443D46257CD0820073CAEB /* MY.swift in Sources */,
 				4162AA782570109000D77415 /* LocationManager.swift in Sources */,
 				41560FA3256573B000B15D5D /* AppDelegate.swift in Sources */,
+				4189AAEB2582041300CCA4A8 /* AR_TEST.swift in Sources */,
 				416306492566314800CD8578 /* NaverMapView.swift in Sources */,
 				41F3385A2573FEB6009E5114 /* NaviView.swift in Sources */,
 				4151021E2580F19300883A81 /* ObjectView.swift in Sources */,

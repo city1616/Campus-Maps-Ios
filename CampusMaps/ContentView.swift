@@ -64,11 +64,12 @@ struct ContentView : View {
                     Image(systemName: "arkit")
                     Text("AR")
                 }
+            // NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)
             MY()
                 .tag(4)
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("HOME")
+                    Text("MY")
                 }
         }
 //         .edgesIgnoringSafeArea(.all)
@@ -93,7 +94,7 @@ struct ARViewContainer: UIViewRepresentable {
 //        self.arView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.load장면1()
+        let boxAnchor = try! Experience.load장면()
 
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)

@@ -62,15 +62,13 @@ struct NaviView: View {
     
     @State var filteredSchool = School
     
-    let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
+    // let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
     // var mode: MGLUserTrackingMode
     
     // @State var showlocation = false
     
     var body: some View {
-        ForEach(filteredSchool) { item in
-            
-        }
+        
         ZStack {
             CustomNavigationView(view: AnyView(NaviMapView(annotations: $annotations).centerCoordinate(.init(latitude: 35.968461, longitude: 126.958047)).zoomLevel(16).edgesIgnoringSafeArea(.all)), placeHolder: "Search", largeTitle: false, title: "Campus Maps", onSearch: { (txt) in
                 if txt != "" {

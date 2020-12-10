@@ -22,7 +22,7 @@ struct ARNaviView: View {
                         ObjectView()
                     }
                     else {
-                        NaverMapView()
+                        NaviView()
                     }
                 }
             }
